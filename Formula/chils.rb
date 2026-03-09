@@ -1,9 +1,9 @@
 class Chils < Formula
   desc "Concurrent Hybrid Iterated Local Search for Maximum Weight Independent Set"
   homepage "https://github.com/KarlsruheMIS/CHILS"
-  url "https://github.com/KarlsruheMIS/CHILS/archive/refs/tags/SEA2025.tar.gz"
-  version "1.0"
-  sha256 "2f91cb9bc24e523b170dc0c2108e431c32e136394979bd359ed7013af61d44e1"
+  url "https://github.com/KarlsruheMIS/CHILS/archive/refs/tags/v1.1.tar.gz"
+  version "1.1"
+  sha256 "81196423fa82640ad80bd9f6d87b9882713fbe8cc9d79ce6e458d1d811c98639"
   license "MIT"
 
   depends_on "gcc"
