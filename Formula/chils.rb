@@ -19,10 +19,11 @@ class Chils < Formula
     gcc_cc = "#{gcc.opt_bin}/gcc-#{gcc.version.major}"
 
     mkdir_p "bin"
-    system "make", "CC=#{gcc_cc}"
+    system "make", "CHILS", "CC=#{gcc_cc}"
+    system "make", "libCHILS.a", "CC=#{gcc_cc}", "AR=ar"
 
     bin.install "CHILS"
-    lib.install "libCHILS.a"
+    lib.install "libCHILS.a" if File.exist?("libCHILS.a")
     include.install "include/chils.h"
   end
 
